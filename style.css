@@ -1,0 +1,178 @@
+:root {
+    --color-link: #4b33d0;
+    --azul-boton: #0a69de;
+    --color-blancoLight: #f8f9fa;
+    --fondoMorado :linear-gradient( 135deg, rgb(75, 51, 208) 0%, rgb(98, 58, 162) 100%);
+    font-family: 'Poppins', sans-serif;
+  }
+li .enlacesNav{ 
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    
+}
+li .enlacesNav:hover::after {
+    width: 100%;
+}
+li .enlacesNav::after{
+    content: "";
+    position: absolute;
+    background: var(--color-link);
+    display: inline-block;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.navExtendido ul li a{
+    color: black;
+}
+.navExtendido ul li a:hover{
+    color: var(--color-link);
+}
+.getStarted{
+    background-color: var(--azul-boton);
+}
+.getStarted:hover{
+    background-color: black;
+}
+.inicio{
+    background-image: var(--fondoMorado);
+}
+.inicio .filaInicio{
+    width: 90%;
+}
+.inicio .textoInicio h1,  h2{
+    font-size: 60px;
+}
+.inicio .textoInicio p{
+    font-size: 20px;
+}
+.inicio .textoInicio a:hover{
+    background-color: var(--azul-boton);
+    color: white;
+    border-color: var(--azul-boton);
+}
+.about .tarjetas i{
+    font-size: 40px;
+}
+.about .tarjetas div div:hover{
+    background-image: var(--fondoMorado);
+    color: white;
+}
+.about .tarjetas div div:hover i{
+    background-image: var(--fondoMorado);
+    color: white;
+}
+.about .tarjetas div i{
+    color: var(--azul-boton);
+}
+.estadisticas{
+    background-image: var(--fondoMorado);
+}
+.estadisticas div div:hover div div {
+    transform: translate3d(0,-15px,0);
+    transition-duration: 0.5s;
+}
+.estadisticas div div div span{
+    font-size: 36px;
+}
+.estadisticas div div div div i{
+    font-size: 42px;
+}
+.proyectos div div a{
+    text-decoration: none;
+    color: black;
+}
+.proyectos div div a:hover{
+    color: var(--color-link);
+}
+.opiniones{
+    background-image: var(--fondoMorado);
+}
+.opiniones div div h2{
+    font-size: 30px;
+}
+.opiniones div div div div div i{
+    font-size: 45px;
+}
+div .formularioContacto input{
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+div .formularioContacto textarea{
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+div .formularioContacto a{
+    background-color: var(--color-link);
+}
+.datosContacto div i{
+    font-size: 38px;
+}
+footer div div div ul{
+    list-style: none;
+}
+footer div div div ul li i{
+    font-size: 17px;
+}
+/***** breackpoitns *****/ 
+@media  (width <= 992px){
+    nav{
+        background-color: var(--color-blancoLight);
+    }
+    nav div button .iconoDesplegable{
+        color: black !important;
+    }
+    .inicio{
+        margin-top: 17%;
+    }
+    .proyectos div div a{
+        font-size: 13px;
+    }
+}
+@media (width >= 992px){
+    .mosaicoImagenes{
+        display: grid;
+        grid-template-areas:
+                    "a b d d"
+                    "a c d d"
+                    "e e f f"
+                    "e e g h";
+    }
+    .mosaicoImagenes .img1{
+        grid-area: a;
+    }
+    .mosaicoImagenes .img2{
+        grid-area: b;
+    }
+    .mosaicoImagenes .img3{
+        grid-area: c;
+    }
+    .mosaicoImagenes .img4{
+        grid-area: d;
+    }
+    .mosaicoImagenes .img5{
+        grid-area: e;
+    }
+    .mosaicoImagenes .img6{
+        grid-area: f;
+    }
+    .mosaicoImagenes .img7{
+        grid-area: g;
+    }
+    .mosaicoImagenes .img8{
+        grid-area: h;
+    }
+    .opiniones div div h2{
+        font-size: 40px;
+    }
+}
+/***** End breackpoitns *****/
+

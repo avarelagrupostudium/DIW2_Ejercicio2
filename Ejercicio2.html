@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ejercicio2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <nav class="navbar fixed-top my-md-3">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler m-0 p-0 border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNav"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-list col align-self-end text-light iconoDesplegable"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+          <a class="navbar-brand d-lg-none" href="#"
+            ><div><img src="assets/img/logo.png" alt="" /></div
+          ></a>
+          <div class="container d-none d-lg-grid col-11 navExtendido">
+            <ul class="navbar-nav d-flex flex-row bg-light px-3 fw-bold">
+              <li class="nav-item my-auto">
+                <a class="navbar-brand d-block" href="#"
+                  ><img class="" src="assets/img/logo.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item text-center px-2 flex-fill align-self-center">
+                <a class="nav-link" aria-selected="true" href="#">Home</a>
+              </li>
+              <li class="nav-item text-center px-2 flex-fill align-self-center">
+                <a class="nav-link" href="#">About Agency</a>
+              </li>
+              <li class="nav-item text-center px-2 flex-fill align-self-center">
+                <a class="nav-link" href="#">Corporate Projects</a>
+              </li>
+              <li class="nav-item text-center px-2 flex-fill align-self-center">
+                <a class="nav-link" href="#">Reviews</a>
+              </li>
+              <li class="nav-item text-center px-2 flex-fill align-self-center">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item text-center flex-fill align-self-center getStarted">
+                <button class=" btn nav-link p-4 text-light" href="#">Get Started Now</button>
+              </li>
+              <li class="flex-fill align-self-center">
+                <ul class="navbar-nav d-flex flex-row mx-auto">
+                  <li class="nav-item flex-fill text-center">
+                    <i class="bi bi-facebook p-2"></i>
+                  </li>
+                  <li class="nav-item flex-fill text-center">
+                    <i class="bi bi-instagram p-2"></i>
+                  </li>
+                  <li class="nav-item flex-fill text-center">
+                    <i class="bi bi-twitter p-2"></i>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="offcanvas offcanvas-top min-vh-100"
+            id="offcanvasNav"
+            tabindex="-1"
+          >
+            <div class="offcanvas-header">
+              <button type="button" class="btn" data-bs-dismiss="offcanvas">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-x-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="mb-4">
+                <img class="d-block mx-auto" src="assets/img/logo.png" alt="" />
+              </div>
+              <ul class="navbar-nav fs-4">
+                <li class="nav-item text-center p-2">
+                  <a class="nav-link enlacesNav" href="#">Home</a>
+                </li>
+                <li class="nav-item text-center p-2">
+                  <a class="nav-link enlacesNav" href="#">About Agency</a>
+                </li>
+                <li class="nav-item text-center p-2">
+                  <a class="nav-link enlacesNav" href="#">Corporate Projects</a>
+                </li>
+                <li class="nav-item text-center p-2">
+                  <a class="nav-link enlacesNav" href="#">Reviews</a>
+                </li>
+                <li class="nav-item text-center p-2">
+                  <a class="nav-link enlacesNav" href="#">Blog</a>
+                </li>
+                <li class="nav-item text-center p-2">
+                  <a class="nav-link enlacesNav" href="#">Get Started Now</a>
+                </li>
+              </ul>
+              <div class="col mt-4 fixed-bottom mb-5">
+                <ul class="navbar-nav d-flex flex-row col-2 mx-auto pb-2">
+                  <li class="nav-item flex-fill text-center">
+                    <i class="bi bi-facebook p-2"></i>
+                  </li>
+                  <li class="nav-item flex-fill text-center">
+                    <i class="bi bi-instagram p-2"></i>
+                  </li>
+                  <li class="nav-item flex-fill text-center">
+                    <i class="bi bi-twitter p-2"></i>
+                  </li>
+                </ul>
+                <p class="fs-5 text-center">
+                  © 2023 MegaOne. Made With Love by Themesindustry
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container-fluid inicio min-vh-100">
+      <div class="row mx-auto min-vh-100 filaInicio">
+        <div class="col-12 col-lg-6 imagenInicio align-self-end">
+          <img class="img-fluid" src="assets/img/banner-img.png" alt="" />
+        </div>
+        <div class="col-12 col-lg-6 my-auto textoInicio text-light p-5">
+          <h2 class="fw-light">Corporate</h2>
+          <h1 class="fw-bold">Business Agency</h1>
+          <p class="mt-5">
+            Corporate Business Agency Donec quis nunc mollis, tincidunt mi vel,
+            pellentesque arcu. Nam nec tristique ex, vitae posuere enim. Nunc
+            vulputate metus id ex pretium fermentum.
+          </p>
+          <a class="btn btn-light mt-4 px-5 py-3 rounded-pill" href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid bg-light pt-5 about">
+      <div class="row col-11 mx-auto mt-lg-5">
+        <div class="col-12 col-lg-6">
+          <h4 class="text-center py-3 text-primary text-lg-start">About Gradient Agency</h4>
+          <h3 class="fw-bold fs-1 text-center text-wrap text-lg-start pe-lg-5">
+            Welcome to intro paragragh for some more info about the megaone
+            comapny.
+          </h3>
+        </div>
+        <div class="col-12 col-lg-6 py-3">
+          <p class="text-center text-wrap text-lg-start mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales
+            lobortis vehicula. Aliquam sodales turpis a neque sagittis,
+            condimentum imperdiet risus luctus. Praesent cursus non risus in
+            tempor. Phasellus eu purus sed arcu posuere consequat euismod ac
+            augue. Morbi venenatis dictum consequat. Phasellus eu purus sed arcu
+            posuere consequat euismod ac augue. Morbi venenatis dictum
+            consequat.
+          </p>
+        </div>
+      </div>
+      <div class="row tarjetas col-12 mx-auto p-5">
+        <div class="col-12 mx-auto col-lg-3 text-center">
+          <div class="rounded-3 shadow pt-5 pb-3 my-3">
+            <i class="bi bi-briefcase"></i>
+            <p class="pt-2 fs-3">Our Consultants</p>
+          </div>
+        </div>
+        <div class="col-12 mx-auto col-lg-3 text-center">
+          <div class="rounded-3 shadow pt-5 pb-3 my-3">
+            <i class="bi bi-lightbulb"></i>
+            <p class="pt-2 fs-3">Great Ideas</p>
+          </div>
+        </div>
+        <div class="col-12 mx-auto col-lg-3 text-center">
+          <div class="rounded-3 shadow pt-5 pb-3 my-3">
+            <i class="bi bi-wallet2"></i>
+            <p class="pt-2 fs-3">Great Ideas</p>
+          </div>
+        </div>
+        <div class="col-12 mx-auto col-lg-3 text-center">
+          <div class="rounded-3 shadow pt-5 pb-3 my-3">
+            <i class="bi bi-cash"></i>
+            <p class="pt-2 fs-3">Earn Profit</p>
+          </div>
+        </div>
+      </div>
+      <div class="row px-lg-5 pb-0">
+        <div class="col-12 mx-auto text-center">
+          <img class="img-fluid" src="assets/img/about-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid estadisticas">
+      <div class="row p-5 text-light">
+        <div class="col-12 mx-auto col-lg-3 text-center">
+          <div class="pt-5 pb-3 my-3">
+            <div>
+              <i class="bi bi-bar-chart-line"></i>
+            </div>
+            <span class="text-center fw-light">3785+</span>
+            <p class="fw-light">Projects</p>
+          </div>
+        </div>
+        <div class="col-12 mx-auto col-lg-3 text-center">
+          <div class="pt-5 pb-3 my-3">
+            <div>
+              <i class="bi bi-heart"></i>
+            </div>
+            <span class="text-center fw-light">2295+</span>
+            <p class="fw-light">Customers</p>
+          </div>
+        </div>
+        <div class="col-12 mx-auto col-lg-3 text-center">
+          <div class="pt-5 pb-3 my-3">
+            <div>
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <span class="text-center fw-light">1559+</span>
+            <p class="fw-light">Consultations</p>
+          </div>
+        </div>
+        <div class="col-12 mx-auto col-lg-3 text-center">
+          <div class="pt-5 pb-3 my-3">
+            <div>
+              <i class="bi bi-easel"></i>
+            </div>
+            <span class="text-center fw-light">1990+</span>
+            <p class="fw-light">Since</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid bg-light proyectos pt-5 px-4">
+      <div class="row mt-5">
+          <div class="col-12 col-lg-6 mx-auto">
+            <h4 class="text-center text-primary">Let us show you our work</h4>
+          <h2 class="text-center fs-1 fw-light mt-2 w-70 mx-auto">We have completed some great projects</h2>
+          <p class="text-center mt-4 mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" text-center col-11 col-lg-5 mx-auto d-flex pt-5 pb-4">
+          <a class="flex-fill">All</a>
+          <span class="flex-fill text-primary">/</span>
+          <a class="flex-fill">Graphic Design</a>
+          <span class="flex-fill text-primary">/</span>
+          <a class="flex-fill">Web Design</a>
+          <span class="flex-fill text-primary">/</span>
+          <a class="flex-fill">SEO</a>
+          <span class="flex-fill text-primary">/</span>
+          <a class="flex-fill">Marketing</a>
+        </div>
+        <div class="row col-12 col-lg-10 mx-auto g-lg-0 gy-2 px-lg-5 mosaicoImagenes pb-5">
+          <div class="img1"><img class="w-100" src="assets/img/portfolio-1.jpg" alt="" /></div>
+          <div class="img2"><img class="w-100" src="assets/img/portfolio-2.jpg" alt="" /></div>
+          <div class="img3"><img class="w-100" src="assets/img/portfolio-3.jpg" alt="" /></div>
+          <div class="img4"><img class="w-100" src="assets/img/portfolio-4.jpg" alt="" /></div>
+          <div class="img5"><img class="w-100" src="assets/img/portfolio-5.jpg" alt="" /></div>
+          <div class="img6"><img class="w-100" src="assets/img/portfolio-6.jpg" alt="" /></div>
+          <div class="img7"><img class="w-100" src="assets/img/portfolio-7.jpg" alt="" /></div>
+          <div class="img8"><img class="w-100" src="assets/img/portfolio-8.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid opiniones p-4">
+      <div class="row py-lg-5">
+        <div class="col-12 col-lg-6 text-light my-5 pt-lg-3">
+          <h2 class="text-center text-lg-start col-10 col-lg-5 mx-auto fw-bold px-5 ps-lg-0 ms-lg-5">Happy Customers</h2>
+          <p class="text-center text-lg-start fw-light mt-5 ms-lg-5">
+            Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.
+          </p>
+        </div>
+      
+        <div id="carouselOpiniones" class="carousel slide col-12 col-lg-6" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active text-light pb-4">
+              <div class="text-center my-2">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo.
+              </p>
+              <div class="rounded-circle col-4 col-lg-2 mx-auto mt-5">
+                <img src="assets/img/review-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <p class="my-4 text-center fw-light fs-4">Sara Williams</p>
+            </div>
+            <div class="carousel-item active text-light pb-4">
+              <div class="text-center my-2">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo.
+              </p>
+              <div class="rounded-circle col-4 col-lg-2 mx-auto mt-5">
+                <img src="assets/img/review-2.png" class="d-block w-100 rounded-circle" alt="...">
+              </div>
+              <p class="my-4 text-center fw-light fs-4">Mandy Rose</p>
+            </div>
+            <div class="carousel-item active text-light pb-4">
+              <div class="text-center my-2">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo.
+              </p>
+              <div class="rounded-circle col-4 col-lg-2 mx-auto mt-5">
+                <img src="assets/img/review-3.jpg" class="d-block w-100 rounded-circle " alt="...">
+              </div>
+              <p class="my-4 text-center fw-light fs-4">Steve Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid bg-light p-4">
+      <div class="row py-5">
+        <h3 class="text-center text-primary fw-light">Book Your Appointment</h3>
+        <h2 class="text-center fw-medium py-3" style="font-size: 42px;">Let’s Get Started</h2>
+        <p class="text-center text-secondary fw-light col-lg-7 mx-auto" style="font-size: 13px;">
+          Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-7 p-lg-5">
+          <form class="formularioContacto" id="contact-form-data">
+              <div class="col-sm-12" id="result"></div>
+              <div class="col-12 py-4">
+                  <input type="text" name="userName" placeholder="Name" class="form-control border-bottom fw-bold">
+              </div>
+              <div class="col-12 py-4">
+                  <input type="email" name="userEmail" placeholder="Contact No" class="form-control border-bottom fw-bold">
+              </div>
+              <div class="col-12 py-4">
+                  <input type="text" name="userSubject" placeholder="Email" class="form-control border-bottom fw-bold">
+              </div>
+              <div class="col-12 py-4">
+                  <textarea class="form-control border-bottom fw-bold" name="userMessage" rows="6" placeholder="Type Your Message Here "></textarea>
+              </div>
+              <a class="btn rounded-pill col-12 text-light p-2 my-3" role="button">SEND INFORMATION</a>
+          </form>
+        </div>
+        <div class="col-12 col-lg-5 datosContacto py-2 my-lg-auto">
+          <div class="row text-center py-4">
+            <i class="bi bi-geo-alt col-lg-2"></i>
+            <p class="col-lg-8 my-lg-auto text-lg-start">123 Park Avenue, New York</p>
+          </div>
+          <div class="row text-center py-4">
+            <i class="bi bi-telephone-inbound col-lg-2"></i>
+            <p class="col-lg-8 my-lg-auto text-lg-start">+1 631 1234 5678</p>
+          </div>
+          <div class="row text-center py-4">
+            <i class="bi bi-send-arrow-up col-lg-2"></i>
+            <p class="col-lg-8 my-lg-auto text-lg-start">123 Park Avenue, New York</p>
+          </div>
+          <div class="row text-center py-4">
+            <i class="bi bi-geo-alt col-lg-2"></i>
+            <div class="col-lg-8 my-lg-auto text-lg-start">
+              <p class="m-0">Monday to Friday 10am to 6pm</p>
+              <span>Saturday 10am to 4am</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid bg-light py-5">
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4511.161964988137!2d-8.416373334429053!3d43.3613049570263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c894fffffff%3A0xc61e9c540b9a63b0!2sCasa%20de%20las%20Ciencias!5e0!3m2!1ses!2sus!4v1709428700117!5m2!1ses!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <footer class="container-fluid bg-light p-4">
+      
+          <div class="row">
+              
+              <div class="col-12 text-center pb-5">
+                  <div>
+                      <ul class="col-lg-6 d-flex flex-row mx-auto">
+                          <li class="flex-fill"><i class="bi bi-facebook"></i></li>
+                          <li class="flex-fill"><i class="bi bi-twitter"></i></li>
+                          <li class="flex-fill"><i class="bi bi-google"></i></li>
+                          <li class="flex-fill"><i class="bi bi-linkedin"></i></li>
+                          <li class="flex-fill"><i class="bi bi-instagram"></i></li>
+                          <li class="flex-fill"><i class="bi bi-pinterest"></i></li>
+                      </ul>
+                  </div>
+                  <p class="col-lg-5 mx-auto text-secondary" style="font-size: 13px;">© 2023 MegaOne. Made With Love By <a>Themesindustry</a></p>
+              </div>
+          </div>
+      
+  </footer>
+  </body>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+</html>
